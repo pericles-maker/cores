@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Color y Psicología</title>
+    <link rel="stylesheet" href="css/Index.css">
+</head>
+<body>
+
+    <header>
+        <!-- Barra de Navegación -->
+        <nav>
+            <a href="javascript:void(0)" onclick="showSection('home')">Portada</a>
+            <a href="javascript:void(0)" onclick="showSection('teoria')">Teoría del Color</a>
+            <a href="javascript:void(0)" onclick="showSection('psicologia')">Psicología del Color</a>
+            <a href="javascript:void(0)" onclick="showSection('modelos')">Modelos de Color</a>
+            <a href="javascript:void(0)" onclick="showSection('colores')">Colores Ejemplo</a> 
+        </nav>
+    </header>
+
+    <!-- Contenido de la página -->
+    <div class="content">
+        <!-- Sección de la portada -->
+        <div id="home" class="section portada">
+            <h1>La Teoría del Color</h1>
+            <p>Explora cómo los colores impactan nuestro mundo y percepción.</p>
+        </div>
+
+        <!-- Sección de Teoría del Color -->
+<div id="teoria" class="section">
+    <h1>Teoría del Color</h1>
+    <p>La teoría del color se refiere a la mezcla de colores y cómo interactúan entre sí. Existen varios modelos de color, que se utilizan para crear combinaciones armónicas en el diseño gráfico, el arte y la vida cotidiana. Los colores pueden dividirse en primarios, secundarios y terciarios. Además, tienen relaciones específicas entre ellos que producen efectos visuales distintos.</p>
+    
+    <h2>Colores Primarios</h2>
+    <p>Los colores primarios son los colores base a partir de los cuales se pueden crear otros colores. En el modelo RGB, los colores primarios son:</p>
+    <ul>
+        <li><strong>Rojo</strong></li>
+        <li><strong>Verde</strong></li>
+        <li><strong>Azul</strong></li>
+    </ul>
+    <p>En el modelo CMYK, los colores primarios son:</p>
+    <ul>
+        <li><strong>Cian</strong></li>
+        <li><strong>Magenta</strong></li>
+        <li><strong>Amarillo</strong></li>
+    </ul>
+    
+    <h2>Colores Secundarios</h2>
+    <p>Los colores secundarios se obtienen mezclando dos colores primarios:</p>
+    <ul>
+        <li><strong>Violeta:</strong> Rojo + Azul</li>
+        <li><strong>Naranja:</strong> Rojo + Amarillo</li>
+        <li><strong>Verde:</strong> Azul + Amarillo</li>
+    </ul>
+    
+    <h2>Colores Complementarios</h2>
+    <p>Los colores complementarios son aquellos que están opuestos en el círculo cromático. Son ideales para crear contrastes fuertes y combinaciones vibrantes. Algunos ejemplos son:</p>
+    <ul>
+        <li><strong>Rojo y Verde</strong></li>
+        <li><strong>Azul y Naranja</strong></li>
+        <li><strong>Amarillo y Violeta</strong></li>
+    </ul>
+
+    <h2>Ejemplos Visuales de la Teoría del Color</h2>
+    <div class="color-examples">
+        <div class="color-example" style="background-color: rgb(255, 0, 0); animation: pulseRed 2s infinite;">
+            <p>Rojo</p>
+        </div>
+        <div class="color-example" style="background-color: rgb(0, 255, 0); animation: pulseGreen 2s infinite;">
+            <p>Verde</p>
+        </div>
+        <div class="color-example" style="background-color: rgb(0, 0, 255); animation: pulseBlue 2s infinite;">
+            <p>Azul</p>
+        </div>
+    </div>
+
+    <h2>Colores Secundarios en Acción</h2>
+    <div class="color-examples">
+        <div class="color-example" style="background-color: rgb(255, 165, 0); animation: pulseOrange 2s infinite;">
+            <p>Naranja</p>
+        </div>
+        <div class="color-example" style="background-color: rgb(75, 0, 130); animation: pulseViolet 2s infinite;">
+            <p>Violeta</p>
+        </div>
+        <div class="color-example" style="background-color: rgb(0, 255, 255); animation: pulseCyan 2s infinite;">
+            <p>Cian</p>
+        </div>
+    </div>
+
+    <h2>Animación de Colores Combinados</h2>
+    <div class="color-examples">
+        <div class="color-example" style="background-color: rgb(255, 99, 71); animation: pulseComplementary1 2s infinite;">
+            <p>Rojo-Naranja</p>
+        </div>
+        <div class="color-example" style="background-color: rgb(60, 179, 113); animation: pulseComplementary2 2s infinite;">
+            <p>Verde-Amarillo</p>
+        </div>
+    </div>
+</div>
+
+
+        <!-- Sección de Modelos de Color -->
+        <div id="modelos" class="section">
+            <h1>Modelos de Color</h1>
+            <h3>RGB</h3>
+            <p>El modelo RGB es aditivo y utiliza combinaciones de luz roja, verde y azul para crear otros colores.</p>
+            <div class="color-model" style="background-color: rgb(255, 0, 0);" onclick="changeBackgroundColor('rgb(255, 0, 0)')">RGB Rojo</div>
+            <div class="color-model" style="background-color: rgb(0, 255, 0);" onclick="changeBackgroundColor('rgb(0, 255, 0)')">RGB Verde</div>
+            <div class="color-model" style="background-color: rgb(0, 0, 255);" onclick="changeBackgroundColor('rgb(0, 0, 255)')">RGB Azul</div>
+
+            <h3>CMYK</h3>
+            <p>El modelo CMYK es sustractivo y se utiliza en impresión. Se basa en las combinaciones de cian, magenta, amarillo y negro.</p>
+            <div class="color-model" style="background-color: cyan;" onclick="changeBackgroundColor('cyan')">CMYK Cian</div>
+            <div class="color-model" style="background-color: magenta;" onclick="changeBackgroundColor('magenta')">CMYK Magenta</div>
+            <div class="color-model" style="background-color: yellow;" onclick="changeBackgroundColor('yellow')">CMYK Amarillo</div>
+
+            <h3>HEXADECIMAL</h3>
+            <p>Los colores en formato hexadecimal se representan con un código alfanumérico de 6 caracteres, como #FF5733.</p>
+            <div class="color-model" style="background-color: #FF5733;" onclick="changeBackgroundColor('#FF5733')">Hex #FF5733</div>
+            <div class="color-model" style="background-color: #3498db;" onclick="changeBackgroundColor('#3498db')">Hex #3498db</div>
+            <div class="color-model" style="background-color: #2ecc71;" onclick="changeBackgroundColor('#2ecc71')">Hex #2ecc71</div>
+        </div>
+
+        <!-- Sección de Psicología del Color -->
+<div id="psicologia" class="section">
+    <h1>Psicología del Color</h1>
+    <p>Los colores no solo afectan nuestra percepción estética, sino que también tienen un impacto psicológico. Cada color puede evocar emociones diferentes. Ejemplo:</p>
+    <ul>
+        <li><strong>Rojo:</strong> Energía, pasión, peligro.</li>
+        <li><strong>Azul:</strong> Tranquilidad, confianza, serenidad.</li>
+        <li><strong>Verde:</strong> Naturaleza, frescura, salud.</li>
+    </ul>
+
+    <h2>Colores Interactivos y sus Significados</h2>
+
+    <div class="color-frame">
+        <div class="color-block" style="background-color: #d41515;"></div>
+        <p><strong>Rojo (#FF5733):</strong> Energía, pasión, peligro. A menudo utilizado para llamar la atención y crear una sensación de urgencia.</p>
+    </div>
+
+    <div class="color-frame">
+        <div class="color-block" style="background-color: #3498db;"></div>
+        <p><strong>Azul (#3498db):</strong> Tranquilidad, confianza, serenidad. Es un color calmante que genera sensaciones de paz y profesionalismo.</p>
+    </div>
+
+    <div class="color-frame">
+        <div class="color-block" style="background-color: #2ecc71;"></div>
+        <p><strong>Verde (#2ecc71):</strong> Naturaleza, frescura, salud. Asociado con la tranquilidad y la naturaleza, simboliza el crecimiento y la estabilidad.</p>
+    </div>
+
+    <div class="color-frame">
+        <div class="color-block" style="background-color: #e71919;"></div>
+        <p><strong>Rojo Oscuro (#e74c3c):</strong> Intensidad, peligro, amor profundo. Se utiliza en situaciones que requieren una reacción emocional fuerte.</p>
+    </div>
+
+    <div class="color-frame">
+        <div class="color-block" style="background-color: #f39c12;"></div>
+        <p><strong>Amarillo (#f39c12):</strong> Felicidad, energía, atención. Es un color brillante que estimula el optimismo y la creatividad.</p>
+    </div>
+</div>
+
+
+        <!-- Sección de Colores y su Psicología -->
+        <div id="colores" class="section">
+            <h2>Paleta Pastel</h2>
+<div class="color-frame">
+    <div class="color-block" style="background-color: var(--pastel-rosa);"></div>
+    <p>Rosa Pastel</p>
+</div>
+<div class="color-frame">
+    <div class="color-block" style="background-color: var(--pastel-azul);"></div>
+    <p>Azul Pastel</p>
+</div>
+<div class="color-frame">
+    <div class="color-block" style="background-color: var(--pastel-verde);"></div>
+    <p>Verde Pastel</p>
+</div>
+<div class="color-frame">
+    <div class="color-block" style="background-color: var(--pastel-amarillo);"></div>
+    <p>Amarillo Pastel</p>
+</div>
+
+<h2>Colores Neón</h2>
+<div class="color-frame">
+    <div class="color-block" style="background-color: var(--neon-rosa);"></div>
+    <p>Rosa Neón</p>
+</div>
+<div class="color-frame">
+    <div class="color-block" style="background-color: var(--neon-verde);"></div>
+    <p>Verde Neón</p>
+</div>
+<div class="color-frame">
+    <div class="color-block" style="background-color: var(--neon-azul);"></div>
+    <p>Azul Neón</p>
+</div>
+<div class="color-frame">
+    <div class="color-block" style="background-color: var(--neon-amarillo);"></div>
+    <p>Amarillo Neón</p>
+</div>
+
+<h2>Colores Tierra</h2>
+<div class="color-frame">
+    <div class="color-block" style="background-color: var(--tierra-marron);"></div>
+    <p>Marrón Tierra</p>
+</div>
+<div class="color-frame">
+    <div class="color-block" style="background-color: var(--tierra-verde);"></div>
+    <p>Verde Tierra</p>
+</div>
+<div class="color-frame">
+    <div class="color-block" style="background-color: var(--tierra-ocre);"></div>
+    <p>Ocre</p>
+</div>
+<div class="color-frame">
+    <div class="color-block" style="background-color: var(--tierra-rojo);"></div>
+    <p>Rojo Tierra</p>
+</div>
+
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Diseño realizado por <strong>Rafael Chavez Santiago</strong></p>
+    </footer>
+
+    <script>
+        // Función para cambiar el color de fondo de la página
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        // Función para mostrar solo la sección activa
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+
+        // Mostrar la portada por defecto
+        document.addEventListener("DOMContentLoaded", function() {
+            showSection('home');
+        });
+    </script>
+
+</body>
+</html>
